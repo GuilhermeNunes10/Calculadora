@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora de Juros</title>
+  <link rel="stylesheet" type="text/css" href="Calculadora.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="icon" href="img/Calculadora.png">
+</head>
+
+<body>
+  <div id="tudo">
+    <div id="tudinho">
+      <h1>Calculadora de Juros</h1>
+
+      <form id="formulario">
+        <div id="input">
+          <label for="principal">Valor Principal:</label>
+          <input type="number" id="principal" required>
+
+          <label for="taxa">Taxa de Juros (em %):</label>
+          <input type="number" id="taxa" required>
+
+          <label for="periodo">Período (em meses):</label>
+          <input type="number" id="periodo" required>
+        </div>
+
+        <div class="grupo">
+          <label for="simples">
+            <input type="checkbox" id="simples" name="tipo" value="simples" required>
+            Juros Simples
+          </label>
+
+          <label for="composto">
+            <input type="checkbox" id="composto" name="tipo" value="composto" required>
+            Juros Compostos
+          </label>
+        </div>
+
+        <button type="button" id="calcular">Calcular</button>
+
+        <div  onclick="toggleDarkMode()" class="escuro preto posi">
+          <img id="theme-icon" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+            alt="Modo Escuro">
+        </div>
+      </form>
+
+      <div id="resultado"></div>
+
+    </div>
+  </div>
+  <script src="Calculadora.js"></script>
+</body>
+
+</html>
+
+</html>
